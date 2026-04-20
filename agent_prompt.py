@@ -6,9 +6,8 @@ def build_prompt(requirement: dict, kb: list) -> str:
     Builds a strict JSON-only prompt for Gemini.
     Enforces KB learning, realistic step flows, and step-level expected results.
     """
-
     return f"""
-You are a senior QA automation architect responsible for writing high-quality MANUAL test cases.
+You are a senior QA responsible for writing high-quality MANUAL test cases.
 
 Your output will be directly imported into TestLink, therefore accuracy and structure are critical.
 

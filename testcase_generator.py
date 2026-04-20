@@ -53,7 +53,7 @@ def generate_testcases(requirement: dict, kb: list, return_prompt: bool = False)
                 }
             ],
             temperature=0.2,
-            max_tokens=3000
+  #          max_tokens=3000
         )
 
         raw_output = response.choices[0].message.content
